@@ -18,8 +18,8 @@ export class CardapioPage implements OnInit {
         },
         {
             nome: 'Bebidas', itens: [
-                { nome: 'Coca cola', sub: 'Lata', img: 'assets/imgs/coca.jpg' },
-                { nome: 'Cerveja', sub: '600 ml', img: 'assets/imgs/cerveja.jpg' }
+                { nome: 'Coca cola', sub: 'Lata', img: 'assets/imgs/coca.jpg', preco: '5.00' },
+                { nome: 'Cerveja', sub: '600 ml', img: 'assets/imgs/cerveja.jpg', preco: '6.90' }
             ]
         }
     ]

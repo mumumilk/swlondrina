@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { CheckoutModal } from '../checkout/checkout';
 
 /**
  * Generated class for the DescricaoPage page.
@@ -15,15 +16,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DescricaoPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DescricaoPage');
   }
 
-
-
-  
+  openModal() {
+    let profileModal = this.modalCtrl.create(CheckoutModal);
+    profileModal.present();
+  }
 
 }
