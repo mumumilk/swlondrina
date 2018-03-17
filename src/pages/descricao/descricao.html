@@ -15,39 +15,40 @@
 
 <ion-content padding>
 
-        <ion-slides pager>
-            
-              <ion-slide >
-                <img src="assets/imgs/gato1.jpg">
-               
-              </ion-slide>
-            
-              <ion-slide >
-                <img src="assets/imgs/gato2.jpg">
-              </ion-slide>
-            
-              <ion-slide >
-                  <img src="assets/imgs/gato4.jpg">
-              </ion-slide>
-            
-            </ion-slides>
+  <ion-slides pager>
+
+    <ion-slide>
+      <img src="assets/imgs/gato1.jpg">
+
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/imgs/gato2.jpg">
+    </ion-slide>
+
+    <ion-slide>
+      <img src="assets/imgs/gato4.jpg">
+    </ion-slide>
+
+  </ion-slides>
 
 
-    <div style= "border: 1px" class="descricao">
-      <div>
-      <p>Petit gâteau de chocolate cremoso com uma bola de sorvete de creme</p>      
-      </div>
-      <div>
-          <ion-icon name="logo-usd"></ion-icon>
-          
-        Preço: R$ 12,90<br>
-        <br>
-        <ion-icon name="md-alarm"></ion-icon><p>Tempo de espera: 15 min</p>
-      </div>
+  <div style="border: 1px" class="descricao">
+    <div>
+      <p>Petit gâteau de chocolate cremoso com uma bola de sorvete de creme</p>
     </div>
+    <div>
+      <ion-icon name="logo-usd"></ion-icon>
+      Preço: R$ 12,90
+      <br>
+      <br>
+      <ion-icon name="md-alarm"></ion-icon>
+      <p>Tempo de espera: 15 min</p>
+    </div>
+  </div>
 
 
-    <button class= "center" ion-button round>Confirmar pedido</button>
-   
+  <button (click)= "goConfirmacao()" class="center" ion-button round>Confirmar pedido</button>
+
 
 </ion-content>

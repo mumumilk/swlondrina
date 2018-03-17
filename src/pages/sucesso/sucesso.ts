@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the DescricaoPage page.
+ * Generated class for the SucessoPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,20 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-descricao',
-  templateUrl: 'descricao.html',
+  selector: 'page-sucesso',
+  templateUrl: 'sucesso.html',
 })
-export class DescricaoPage {
+export class SucessoPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad DescricaoPage');
+    console.log('ionViewDidLoad SucessoPage');
   }
-
-
-
-  
 
 }
