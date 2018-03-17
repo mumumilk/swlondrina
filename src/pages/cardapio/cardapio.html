@@ -14,8 +14,8 @@
     <hr >
     <ion-card *ngFor="let item of tipo.itens">
 
-      <ion-card-content>
-        <ion-item>
+      <ion-card-content >
+        <ion-item (click) = "goDetalhes()">
           <ion-avatar item-start>
             <img [src]="item.img">
           </ion-avatar>

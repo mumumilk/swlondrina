@@ -1,0 +1,57 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>Checkout</ion-title>
+        <button ion-button menuToggle (click)="close()">
+            <ion-icon name="close"></ion-icon>
+        </button>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-list radio-group>
+
+        <ion-list-header>
+            Pedido
+        </ion-list-header>
+
+        <ion-item>
+            <ion-label>Para levar</ion-label>
+            <ion-radio value="cord" checked></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Estou no local</ion-label>
+            <ion-radio value="duesenberg" #radio1></ion-radio>
+
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Chego em breve</ion-label>
+            <ion-radio value="hudson" #radio2></ion-radio>
+        </ion-item>
+
+
+    </ion-list>
+    <div *ngIf="radio2.checked == true" style="display: flex; align-content: center; justify-content: center">
+            <button ion-button>Reservar mesa</button>
+    </div>
+    <div *ngIf="radio1.checked == true">
+            <ion-item  style="margin: 10px;">
+                    <ion-label color="primary">Mesa: </ion-label>
+                    <ion-input placeholder=""></ion-input>
+                  </ion-item>
+    </div>
+
+    <br>
+    <br>
+    <div style="display: flex; align-content: center; justify-content: center;">
+            <img src="assets/imgs/credit.png" alt="">
+        </div>
+    <br>
+    <div style="display: flex; align-content: center; justify-content: center; bottom: 0">
+        <button ion-button round>Finalizar pedido</button>
+    </div>
+    
+
+</ion-content>

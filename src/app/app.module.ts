@@ -9,13 +9,15 @@ import { ListPage } from '../pages/list/list';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { CardapioPage } from '../pages/cardapio/cardapio';
+import { CheckoutModal } from '../pages/checkout/checkout';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
     ListPage,
-    CardapioPage
+    CardapioPage,
+    CheckoutModal
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { CardapioPage } from '../pages/cardapio/cardapio';
     MyApp,
     HomePage,
     ListPage,
-    CardapioPage
+    CardapioPage,
+    CheckoutModal
   ],
   providers: [
     StatusBar,
