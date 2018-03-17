@@ -3,7 +3,7 @@ page-home {
 }
     
 ion-content > .fixed-content{
-     background: rgb(48, 47, 47);
+     background: rgb(255, 255, 255);
 }
 
 .card-background-page {
@@ -13,6 +13,7 @@ ion-content > .fixed-content{
         height: 200px;
         position: relative;
         text-align: center;
+        border-radius: 5px;
       }
 
 
