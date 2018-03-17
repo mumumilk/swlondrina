@@ -1,0 +1,32 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>Restaurante Don joão</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content class="cards-bg">
+  
+    <h1 style="text-align: center">Cardápio</h1>
+
+    <div *ngFor="let tipo of tipos">
+
+      <h2 style="padding-left: 10px;">{{tipo.nome}}</h2>
+      <hr>
+    <ion-card *ngFor="let item of tipo.itens">
+
+      <ion-card-content >
+        <ion-item>
+          <ion-avatar item-start>
+            <img [src]="item.img">
+          </ion-avatar>
+          <h2>{{item.nome}}</h2>
+          <p>{{item.sub}}</p>
+        </ion-item>
+      </ion-card-content>
+    
+    </ion-card>
+    </div>
+    
+  
+  
+  </ion-content>
