@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
+import { NavController } from "ionic-angular";
+
 @Component({
     templateUrl: './cardapio.html',
     selector: 'cardapio'
@@ -7,8 +9,8 @@ import { Component, OnInit } from "@angular/core";
 export class CardapioPage implements OnInit {
     tipos = [
         {
-            nome: 'Massas', itens: [
-                { nome: 'macarrao', sub: '2 molhos', img: 'assets/imgs/macarrao.jpg' },
+            nome: 'Comidas', itens: [
+                { nome: 'Petit gâteau', sub: 'cholate', img: 'assets/imgs/gato2.jpg' },
                 { nome: 'Nhoque', sub: 'Frito, 2 molhos', img: 'assets/imgs/nhoque.jpg' },
                 { nome: 'Pastelzinho', sub: 'Frito', img: 'assets/imgs/pastelzinho.jpg' },
                 { nome: 'Pizza', sub: '2 sabores', img: 'assets/imgs/pizza.jpg' }
@@ -22,10 +24,13 @@ export class CardapioPage implements OnInit {
         }
     ]
 
-    constructor() {
+    constructor(public navCtrl: NavController) {
 
     }
 
+    goDetalhes(){
+    this.navCtrl.push("DescricaoPage");
+    }
     ngOnInit() {
 
     }
