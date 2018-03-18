@@ -6,7 +6,10 @@ import { NavController } from "ionic-angular";
     templateUrl: './cardapio.html',
     selector: 'cardapio'
 })
+
 export class CardapioPage implements OnInit {
+  
+
     tipos = [
         {
             nome: 'Comidas', itens: [
@@ -31,9 +34,12 @@ export class CardapioPage implements OnInit {
     goDetalhes(){
     this.navCtrl.push("DescricaoPage");
     }
+    
     ngOnInit() {
 
     }
+
+    
 
 
 

@@ -28,4 +28,7 @@ export class DescricaoPage {
     profileModal.present();
   }
 
+
+
+
 }
