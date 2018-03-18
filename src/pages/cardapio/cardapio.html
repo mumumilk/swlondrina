@@ -17,14 +17,14 @@
       <ion-card-content >
         <ion-item (click) = "goDetalhes()">
           <ion-avatar item-start>
-            <img [src]="item.img">
+            <img [src]="item.img" style="width: 80px; height: 80px">
           </ion-avatar>
 
 
           <h2>{{item.nome}}</h2>
           <p>{{item.sub}}</p>
 
-          <h2 style="color: grey; float: right">R$: {{item.preco}}</h2>
+          <h2 style="color: grey;">R$: {{item.preco}}</h2>
 
         </ion-item>
       </ion-card-content>

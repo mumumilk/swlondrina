@@ -10,10 +10,10 @@ export class CardapioPage implements OnInit {
     tipos = [
         {
             nome: 'Comidas', itens: [
-                { nome: 'Petit gâteau', sub: 'cholate', img: 'assets/imgs/gato2.jpg' },
-                { nome: 'Nhoque', sub: 'Frito, 2 molhos', img: 'assets/imgs/nhoque.jpg' },
-                { nome: 'Pastelzinho', sub: 'Frito', img: 'assets/imgs/pastelzinho.jpg' },
-                { nome: 'Pizza', sub: '2 sabores', img: 'assets/imgs/pizza.jpg' }
+                { nome: 'Petit gâteau', sub: 'cholate', img: 'assets/imgs/gato2.jpg'   , preco: 20.90 },
+                { nome: 'Nhoque', sub: 'Frito, 2 molhos', img: 'assets/imgs/nhoque.jpg', preco: 20.90 },
+                { nome: 'Pastelzinho', sub: 'Frito', img: 'assets/imgs/pastelzinho.jpg', preco: 20.90 },
+                { nome: 'Pizza', sub: '2 sabores', img: 'assets/imgs/pizza.jpg'        , preco: 20.90 }
             ]
         },
         {
