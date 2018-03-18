@@ -10,18 +10,18 @@
 
   <div *ngFor="let tipo of tipos">
 
-    <h2 style="padding-left: 10px;">{{tipo.nome}}</h2>
+    <h2 style="padding-left: 10px; color: white !important">{{tipo.nome}}</h2>
     <hr >
     <ion-card *ngFor="let item of tipo.itens">
 
       <ion-card-content >
-        <ion-item (click) = "goDetalhes()">
+        <ion-item (click) = "goDetalhes(item.cod)">
           <ion-avatar item-start>
             <img [src]="item.img" style="width: 80px; height: 80px">
           </ion-avatar>
 
 
-          <h2>{{item.nome}}</h2>
+          <h3>{{item.cod}} - {{item.nome}}</h3>
           <p>{{item.sub}}</p>
 
           <h2 style="color: grey;">R$: {{item.preco}}</h2>

@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Prato Escolhido</ion-title>
+    <ion-title>{{nome}}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -18,16 +18,8 @@
   <ion-slides pager>
 
     <ion-slide>
-      <img src="assets/imgs/gato1.jpg">
+      <img [src]="image">
 
-    </ion-slide>
-
-    <ion-slide>
-      <img src="assets/imgs/gato2.jpg">
-    </ion-slide>
-
-    <ion-slide>
-      <img src="assets/imgs/gato4.jpg">
     </ion-slide>
 
   </ion-slides>
@@ -35,11 +27,11 @@
 
   <div style="border: 1px" class="descricao">
     <div>
-      <p>Petit gâteau de chocolate cremoso com uma bola de sorvete de creme</p>
+      <p>{{sub}}</p>
     </div>
     <div>
       <ion-icon name="logo-usd"></ion-icon>
-      Preço: R$ 12,90
+      Preço: R$ {{preco}}
       <br>
       <br>
       <ion-icon name="md-alarm"></ion-icon>
